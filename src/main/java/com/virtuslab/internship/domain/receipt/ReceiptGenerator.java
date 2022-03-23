@@ -17,16 +17,17 @@ public class ReceiptGenerator {
 
         Receipt receipt = new Receipt(receiptEntries);
 
-        applyDiscountIfNecessary(receipt);
+        receipt = applyDiscountIfNecessary(receipt);
 
-        return new Receipt(receiptEntries);
+        return receipt;
     }
 
-    private void applyDiscountIfNecessary(Receipt receipt) {
+    private Receipt applyDiscountIfNecessary(Receipt receipt) {
         var tenPercentDiscount = new TenPercentDiscount();
         var fifteenPercentDiscount = new FifteenPercentDiscount();
-        fifteenPercentDiscount.apply(receipt);
-        tenPercentDiscount.apply(receipt);
+        receipt = fifteenPercentDiscount.apply(receipt);
+        receipt = tenPercentDiscount.apply(receipt);
+        return receipt;
     }
 
     private List<ReceiptEntry> generateEntries(List<Product> products){
