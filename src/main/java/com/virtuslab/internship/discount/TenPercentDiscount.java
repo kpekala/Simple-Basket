@@ -6,6 +6,10 @@ import java.math.BigDecimal;
 
 public class TenPercentDiscount extends Discount {
 
+    public TenPercentDiscount() {
+        super(BigDecimal.valueOf(0.9));
+    }
+
     @Override
     protected String getName() {
         return "TenPercentDiscount";

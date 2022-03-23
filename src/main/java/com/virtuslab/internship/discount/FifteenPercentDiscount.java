@@ -8,6 +8,10 @@ import java.math.BigDecimal;
 
 public class FifteenPercentDiscount extends Discount {
 
+    public FifteenPercentDiscount() {
+        super(BigDecimal.valueOf(0.85));
+    }
+
     @Override
     protected String getName() {
         return "FifteenPercentDiscount";
