@@ -1,8 +1,7 @@
-package com.virtuslab.internship.receipt;
+package com.virtuslab.internship.domain.receipt;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public record Receipt(

@@ -1,7 +1,8 @@
 package com.virtuslab.internship.receipt;
 
-import com.virtuslab.internship.basket.Basket;
-import com.virtuslab.internship.product.ProductDb;
+import com.virtuslab.internship.domain.basket.Basket;
+import com.virtuslab.internship.domain.product.ProductDb;
+import com.virtuslab.internship.domain.receipt.ReceiptGenerator;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;

@@ -1,10 +1,10 @@
-package com.virtuslab.internship.receipt;
+package com.virtuslab.internship.domain.receipt;
 
-import com.virtuslab.internship.basket.Basket;
-import com.virtuslab.internship.discount.FifteenPercentDiscount;
-import com.virtuslab.internship.discount.TenPercentDiscount;
-import com.virtuslab.internship.product.Product;
-import com.virtuslab.internship.product.ProductDb;
+import com.virtuslab.internship.domain.basket.Basket;
+import com.virtuslab.internship.domain.discount.FifteenPercentDiscount;
+import com.virtuslab.internship.domain.discount.TenPercentDiscount;
+import com.virtuslab.internship.domain.product.Product;
+import com.virtuslab.internship.domain.product.ProductDb;
 
 import java.util.ArrayList;
 import java.util.HashMap;
